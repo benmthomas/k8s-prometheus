@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rabbitmq-plugins-conf
+  labels:
+    name: rabbitmq-plugins-conf
+  namespace: monitoring
+data:
+  enabled_plugins: |
+    [rabbitmq_prometheus].
